@@ -7,5 +7,6 @@ def no_c(my_string):
             del my_string[i]
         else:
             new_string.insert(my_string[i])
+            string = new_string[:]
     return new_string
 
