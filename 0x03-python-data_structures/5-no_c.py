@@ -1,12 +1,4 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    for i in range (len(my_string=[])):
-        b = my_string[i]
-        new_string []
-        if b == "c" or b == "C":
-            del my_string[i]
-        else:
-            new_string.insert(my_string[i])
-            string = new_string[:]
+    new_string = my_string.translate({ord(i): None for i in 'cC'})
     return new_string
-
