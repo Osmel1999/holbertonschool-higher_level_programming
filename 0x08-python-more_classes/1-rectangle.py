@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Class Rectangle:
+"""Class of a rectangle:
 Defines a Rectangle class.
 """
 
