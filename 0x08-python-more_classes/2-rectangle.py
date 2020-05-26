@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Class Rectangle:
+"""Class of rectangle:
 Defines a Rectangle class.
 """
 
@@ -50,7 +50,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
-        def area(self):
+    def area(self):
         """Calculates the area of a Rectangle instance
         Returns:
             Area of the the rectangle, given by height * width
