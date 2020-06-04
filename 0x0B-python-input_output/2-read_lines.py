@@ -6,12 +6,10 @@ and prints it to stdout
 
 
 def read_lines(filename="", nb_lines=0):
-    """Read from filename (n) lines 
-    and prints to stdout
-    
+    """Reads and prints nb_lines lines from filename.
     Args:
-       - filename: name of the file
-       - nb_lines: number of lines to read
+        - filename: name of the file
+        - nb_lines: number of lines to read
     """
 
     with open(filename) as f:
@@ -25,7 +23,7 @@ def read_lines(filename="", nb_lines=0):
             print(read_text, end="")
         else:
             for line in f:
-                print(read_text, end='')
+                print(line, end='')
                 i += 1
                 if i == nb_lines:
                     break
