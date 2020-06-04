@@ -4,6 +4,13 @@ Reads from a file and prints
 """
 
 def read_file(filename=""):
-    with open(filename, 'r') as f:
+    """ Reads from filename and prints
+    its contents to stdout
+    
+    Args:
+        - filename: name of the file
+    """
+
+    with open(filename) as f:
         read_data = f.read()
         print(read_data, end="")
