@@ -7,8 +7,15 @@ def number_of_lines(filename=""):
     a file and return that number
     Args:
         - filename: name of the file
+
+    Returns:
+        - number of lines
     """
-    with open(filename, 'r') as f:
-        for line in f:
+
+    count = 0
+
+    with open(filename) as f:
+        text = f.readlines()
+        for line in text:
             count += 1
     return count
